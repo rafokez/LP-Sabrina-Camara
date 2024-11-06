@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Book</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.css" rel="stylesheet">
+
+    <style> 
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+        .carousel {
+      font-family: 'Cinzel', sans-serif;
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      height: 800px;
+    }
+
+    .carousel-inner {
+      display: flex;
+      transition: transform 1s ease-in-out;
+      width: 100%;
+    }
+
+    .carousel-item {
+      min-width: 100%;
+      flex-shrink: 0;
+      position: relative;
+      height: 800px;
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel-content {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    .carousel-content h2 {
+      font-size: 4rem;
+      font-weight: 300;
+    }
+
+    .carousel button{
+        transition: ease-in 0.2s;
+        border: 1px solid #dbdbdb;
+    }
+
+    .carousel button:hover{
+        color: #dbdbdb;
+        background-color: #dbdbdb00;
+        border: white;
+        border: 1px solid #dbdbdb;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+      backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+      transition: background 0.3s ease;
+    }
+
+    .navbar img {
+      max-height: 50px;
+    }
+
+    .navbar a {
+      font-family: 'Cinzel', sans-serif;
+      transition: ease-in 0.2s;
+    }
+
+    .navbar a:hover {
+      color: #dbdbdb; /* Cor dourada para destacar */
+    }
+
+    </style>
+
+</head>
+<body class="bg-gray-100">
+
+    <header class="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+          <div>
+            <img src="image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
+          </div>
+          <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative" style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+            <a href="index.html" class="hover:text-gray-900">Home</a>
+            <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
+            <a href="#" class="hover:text-gray-900">Livro de Memórias</a>
+            <a href="bio.html" class="hover:text-gray-900">Bio</a>
+            <a href="#" class="hover:text-gray-900">Projetos Especiais</a>
+            <a href="#" class="hover:text-gray-900">Contato</a>
+          </nav>
+          
+          <!-- Hamburger Menu for Mobile -->
+          <div class="md:hidden">
+            <button id="menu-button" class="text-gray-800 focus:outline-none">
+              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    
+      <!-- Mobile Menu -->
+      <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden">
+        <div class="flex flex-col px-6 py-4">
+          <a href="#" class="hover:text-gray-900 py-2">Home</a>
+          <a href="#" class="hover:text-gray-900 py-2">Casamento</a>
+          <a href="#" class="hover:text-gray-900 py-2">Livro de Memórias</a>
+          <a href="bio.html" class="hover:text-gray-900 py-2">Bio</a>
+          <a href="#" class="hover:text-gray-900 py-2">Loja</a>
+          <a href="#" class="hover:text-gray-900 py-2">Projetos Especiais</a>
+          <a href="#" class="hover:text-gray-900 py-2">Contato</a>
+        </div>
+      </nav>
+
+    <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply" style="background-image: url('image/bouquet_preservation.jpg');">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+            <!-- Conteúdo interno da seção -->
+            <h1 class="mb-4 text-4xl font-boldtracking-tight leading-none text-white md:text-5xl lg:text-6xl" style="font-family: 'Cinzel', sans-serif;">BOUQUET PRESERVATION</h1>
+        </div>
+    </section>
+
+    <section class="bg-white dark:bg-gray-900">
+        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div class="mr-auto place-self-center lg:col-span-7">
+                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+                  O hábito de ter um livro de assinaturas em casamentos é relativamente novo aqui no Brasil. No velho mundo, o “guest book” é algo que nao pode faltar.
+                    Um espaço na festa para os amigos escreverem mensagens, pendurarem fotografias instantâneas (sim, é possível ter mural de polaroides). Traz um aconchego,
+                    um algo a mais cheio de carinho e muito divertido.
+                    Depois essas fotos vão para o livro, que junto com as mensagens deixadas pelos convidados, vira um compilado 
+                    de votos de um dia em que todas as atenções e “good vibes” estão voltadas para o casal.
+                    O papel utilizado no miolo é um papel de alta gramatura, feito artesanalmente na Índia e 100% algodão.</p>
+            </div>
+            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+                <img src="image/bouquet_preservation_photo.jpg" alt="mockup">
+            </div>                
+        </div>
+    </section>
+
+    
+    <div class="flex justify-center py-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center">
+                <a href="teste.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/1.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Paula & Marcos</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina2.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/2.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Natália & Fernando</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina3.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/3.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Camila & Fernando</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina4.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/4.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Maitê & João</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina5.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/5.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Patrícia & Caio</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina6.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/6.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Thais & Eduardo</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina7.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/7.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Gabriela & Pedro</p>
+            </div>
+            <div class="text-center">
+                <a href="pagina8.html">
+                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="image/wedding/8.jpg" alt="">
+                </a>
+                <p class="text-gray-700 font-medium">Os Clássicos</p>
+            </div>
+        </div>
+    </div>
+    
+<!-- Depoimentos Section -->
+<section class="container mx-auto my-12 p-6">
+  <h3 class="text-center text-3xl font-bold mb-6" style="font-family: 'Cinzel', serif; font-weight: 340;">DEPOIMENTOS</h3>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif;">
+          <p class="italic mb-4 text-lg">"Que maravilhoso!!! Sempre falei que não ia querer jogar o meu buquê porque queria eternizar ele...
+              mas nunca havia encontrado um trabalho que me desse a segurança de fazer isso de uma forma tão maravilhosa. Que venha Maio, para eu casar e entregar meu buquê em suas mãos!"</p>
+          <p class="text-right font-semibold">Ana Claudia</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif;">
+          <p class="italic mb-4 text-lg">"...quando vi o seu trabalho fiquei emocionada...e até hoje me emociono...e a gente só se falou pessoalmente uma vez, parece que te conheço há tanto tempo... É um privilégio ter te conhecido. Pessoas como você fazem parte da parte do mundo que vale a pena. Obrigada pelo carinho e pela magia que chega aqui toda vez que abro um livro seu!"</p>
+          <p class="text-right font-semibold">Beatriz</p>
+      </div>
+      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif;">
+          <p class="italic mb-4 text-lg">"Sabrina, não sei o que dizer. Palavras me fogem à mente e corações juntos a pouco, o nosso marido amou o que era. Quando o embrulho foi desfeito ficamos mudos, ele sentou e ficou recordando aquele momento. Em segundos ele se deu conta que era nosso buquê! Não sei como agradecer pela experiência, relembrando todos os detalhes e com a certeza que nosso amor será eterno!"</p>
+          <p class="text-right font-semibold">Flávia</p>
+      </div>
+  </div>
+</section>
+
+    
+    
+    <div class="flex justify-center py-8">
+        <img src="image/wedding/banner2.jpg" class="w-full h-auto max-w-5xl rounded-lg" alt="image description">
+    </div>
+    
+    <section class="container mx-auto my-12 p-6">
+      <h3 class="text-center text-3xl font-bold mb-8" style="font-family: 'Cinzel', serif;">Como Funciona</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="transform hover:scale-105 transition-transform duration-300 flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l4-4m-4 4l-4-4" />
+          </svg>
+          <h4 class="text-xl font-bold mb-2" style="font-family: 'PT Serif', serif;">Agende sua data</h4>
+          <p class="text-gray-700" style="font-family: 'PT Serif', serif;">
+            A quantidade mensal de buquês é limitada, então é importante garantir que seu buquê será preservado.
+          </p>
+        </div>
+    
+        <div class="transform hover:scale-105 transition-transform duration-300 flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-3.866 0-7 2.91-7 6.5S8.134 21 12 21s7-2.91 7-6.5S15.866 8 12 8zM12 5a1 1 0 100-2 1 1 0 000 2z" />
+          </svg>
+          <h4 class="text-xl font-bold mb-2" style="font-family: 'PT Serif', serif;">No dia do Casamento</h4>
+          <p class="text-gray-700" style="font-family: 'PT Serif', serif;">
+            Depois da festa, armazene seu buquê em um saco plástico, dentro da geladeira. É o melhor lugar para deixá-lo firme!
+          </p>
+        </div>
+    
+        <div class="transform hover:scale-105 transition-transform duration-300 flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L4 12m0 0l5.75-5M4 12h16m-4 5.5L20 12m0 0l-5.25-5" />
+          </svg>
+          <h4 class="text-xl font-bold mb-2" style="font-family: 'PT Serif', serif;">Se você é de São Paulo</h4>
+          <p class="text-gray-700" style="font-family: 'PT Serif', serif;">
+            Traga ao ateliê o quanto antes e agendamos a retirada com você aonde for mais conveniente.
+          </p>
+        </div>
+    
+        <div class="transform hover:scale-105 transition-transform duration-300 flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v6l4 2m0 6v-2m-4 0v-6" />
+          </svg>
+          <h4 class="text-xl font-bold mb-2" style="font-family: 'PT Serif', serif;">Se você é fora de São Paulo</h4>
+          <p class="text-gray-700" style="font-family: 'PT Serif', serif;">
+            Coloque seu buquê em uma caixa de papel e calce com plástico bolha ou papel para que ele fique firme na caixa, sem balançar.
+          </p>
+        </div>
+    
+        <div class="transform hover:scale-105 transition-transform duration-300 flex flex-col items-start p-6 bg-white shadow-lg rounded-lg hover:shadow-xl">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m0 0l4-4m-4 4l-4-4" />
+          </svg>
+          <h4 class="text-xl font-bold mb-2" style="font-family: 'PT Serif', serif;">Entrega</h4>
+          <p class="text-gray-700" style="font-family: 'PT Serif', serif;">
+            Por ser artesanal, um trabalho delicado e demorado, seu buquê estará pronto em 30 dias após a chegada dele no ateliê.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+
+
+ <!-- Footer -->
+ <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.</p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="#" class="hover:text-gray-400">Facebook</a>
+        <a href="#" class="hover:text-gray-400">Instagram</a>
+        <a href="#" class="hover:text-gray-400">Pinterest</a>
+        <a href="#" class="hover:text-gray-400">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.js"></script>
+</body>
+</html>

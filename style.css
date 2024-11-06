@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    overflow-x: hidden;
+}
+
+navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
+    backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+    transition: background 0.3s ease;
+  }
+
+  .navbar img {
+    max-height: 50px;
+  }
+
+  .navbar a {
+    font-family: 'Cinzel', sans-serif;
+    transition: ease-in 0.2s;
+  }
+
+  .navbar a:hover {
+    color: #dbdbdb; /* Cor dourada para destacar */
+  }
