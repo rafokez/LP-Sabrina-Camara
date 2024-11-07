@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wedding Book</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Book</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.css" rel="stylesheet">
 
-    <style> 
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-        .carousel {
+    .carousel {
       font-family: 'Cinzel', sans-serif;
       overflow: hidden;
       position: relative;
@@ -55,16 +56,16 @@
       font-weight: 300;
     }
 
-    .carousel button{
-        transition: ease-in 0.2s;
-        border: 1px solid #dbdbdb;
+    .carousel button {
+      transition: ease-in 0.2s;
+      border: 1px solid #dbdbdb;
     }
 
-    .carousel button:hover{
-        color: #dbdbdb;
-        background-color: #dbdbdb00;
-        border: white;
-        border: 1px solid #dbdbdb;
+    .carousel button:hover {
+      color: #dbdbdb;
+      background-color: #dbdbdb00;
+      border: white;
+      border: 1px solid #dbdbdb;
     }
 
     .navbar {
@@ -73,8 +74,10 @@
       left: 0;
       width: 100%;
       z-index: 10;
-      background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
-      backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
+      background: rgba(255, 255, 255, 0.9);
+      /* Fundo branco com transparência */
+      backdrop-filter: blur(10px);
+      /* Efeito de desfoque de fundo */
       transition: background 0.3s ease;
     }
 
@@ -88,138 +91,154 @@
     }
 
     .navbar a:hover {
-      color: #dbdbdb; /* Cor dourada para destacar */
+      color: #dbdbdb;
+      /* Cor dourada para destacar */
     }
-
-    </style>
+  </style>
 
 </head>
+
 <body class="bg-gray-100">
 
-    <header class="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-          <div>
-            <img src="image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-          </div>
-          <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative" style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-            <a href="index.html" class="hover:text-gray-900">Home</a>
-            <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
-            <a href="#" class="hover:text-gray-900">Livro de Memórias</a>
-            <a href="bio.html" class="hover:text-gray-900">Bio</a>
-            <a href="#" class="hover:text-gray-900">Projetos Especiais</a>
-            <a href="#" class="hover:text-gray-900">Contato</a>
-          </nav>
-          
-          <!-- Hamburger Menu for Mobile -->
-          <div class="md:hidden">
-            <button id="menu-button" class="text-gray-800 focus:outline-none">
-              <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 6h16M4 12h16m-7 6h7"></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
-    
-      <!-- Mobile Menu -->
-      <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden">
-        <div class="flex flex-col px-6 py-4">
-          <a href="#" class="hover:text-gray-900 py-2">Home</a>
-          <a href="#" class="hover:text-gray-900 py-2">Casamento</a>
-          <a href="#" class="hover:text-gray-900 py-2">Livro de Memórias</a>
-          <a href="bio.html" class="hover:text-gray-900 py-2">Bio</a>
-          <a href="#" class="hover:text-gray-900 py-2">Loja</a>
-          <a href="#" class="hover:text-gray-900 py-2">Projetos Especiais</a>
-          <a href="#" class="hover:text-gray-900 py-2">Contato</a>
-        </div>
+  <header class="navbar">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <img src="image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
+      </div>
+      <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
+        style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+        <a href="index.html" class="hover:text-gray-900">Home</a>
+        <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
+        <a href="#" class="hover:text-gray-900">Livro de Memórias</a>
+        <a href="bio.html" class="hover:text-gray-900">Bio</a>
+        <a href="#" class="hover:text-gray-900">Projetos Especiais</a>
+        <a href="#" class="hover:text-gray-900">Contato</a>
       </nav>
 
-    <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply" style="background-image: url('image/bouquet_preservation.jpg');">
-        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
-            <!-- Conteúdo interno da seção -->
-            <h1 class="mb-4 text-4xl font-boldtracking-tight leading-none text-white md:text-5xl lg:text-6xl" style="font-family: 'Cinzel', sans-serif;">LIVRO DE MEMÓRIAS (desenvolvimento)</h1>
-        </div>
-    </section>
-
-    <section class="bg-white dark:bg-gray-900">
-        <div class="grid max-w-screen-xl px-4 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
-            <div class="mr-auto place-self-center lg:col-span-7">
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
-                  Em desenvolvimento.</p>
-            </div>
-            <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
-                <img src="image/bouquet_preservation_photo.jpg" alt="mockup">
-            </div>                
-        </div>
-    </section>
-
-    
-    <div class="flex justify-center py-8">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-            <div class="text-center">
-                <a href="teste.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/emma/11.jpeg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Emma Florence</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina2.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/flower/11.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Flowers Sons</p> 
-            </div>
-            <div class="text-center">
-                <a href="pagina3.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/india/11.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Índia Antiga</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina4.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/rosa/rosa1.jpeg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Livro das Rosas</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina5.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/feminino/feminino1.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Livro do Feminino</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina6.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/feminino/feminino2.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Memórias Impressas</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina7.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/provence/provence.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Provence</p>
-            </div>
-            <div class="text-center">
-                <a href="pagina8.html">
-                    <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/botanic/botanic1.jpg" alt="">
-                </a>
-                <p class="text-gray-700 font-medium">Vintage Botanic</p>
-            </div>
-        </div>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
+  </header>
 
- <!-- Footer -->
- <footer class="bg-gray-800 text-white py-4">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.</p>
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden">
+    <div class="flex flex-col px-6 py-4">
+      <a href="#" class="hover:text-gray-900 py-2">Home</a>
+      <a href="#" class="hover:text-gray-900 py-2">Casamento</a>
+      <a href="#" class="hover:text-gray-900 py-2">Livro de Memórias</a>
+      <a href="bio.html" class="hover:text-gray-900 py-2">Bio</a>
+      <a href="#" class="hover:text-gray-900 py-2">Loja</a>
+      <a href="#" class="hover:text-gray-900 py-2">Projetos Especiais</a>
+      <a href="#" class="hover:text-gray-900 py-2">Contato</a>
+    </div>
+  </nav>
+
+  <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
+    style="background-image: url('image/bouquet_preservation.jpg');">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+      <!-- Conteúdo interno da seção -->
+      <h1 class="mb-4 text-4xl font-boldtracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+        style="font-family: 'Cinzel', sans-serif;">LIVRO DE MEMÓRIAS (desenvolvimento)</h1>
+    </div>
+  </section>
+
+  <section class="bg-white dark:bg-gray-900">
+    <div class="grid max-w-screen-xl px-6 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+      <div class="mr-auto place-self-center lg:col-span-7">
+          <p class="max-w-2xl mb-6 mx-12 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+            Feito em processo totalmente artesanal, cada livro tem sua capa, sua pintura e peculiaridades.
+            <br>  <br>
+            Alguns viram álbuns de fotografias queridas. Outros, livros de memórias familiares ou de uma grande viagem.
+            <br>  <br>
+            Ou ainda livros de jornadas pessoais, de reconexão com o sagrado em nós. Também são “guest books” de casamentos apaixonados, onde eternizar memórias é tão essencial.
+          </p>
+      </div>
+      <div class="hidden lg:mt-0 lg:col-span-5 lg:flex">
+        <img src="memorybook/img/mesa.jpg" alt="mockup">
+      </div>
+    </div>
+  </section>
+
+  <div class="flex justify-center py-8">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="text-center">
+        <a href="memorybook/emma.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/emma/11.jpeg" alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Emma Florence</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/flowers.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/flower/11.jpg"
+            alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Flowers Sons</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/india.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/india/11.jpg" alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Índia Antiga</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/rosas.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/rosa/rosa1.jpeg"
+            alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Livro das Rosas</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/feminino.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
+            src="memorybook/feminino/feminino1.jpg" alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Livro do Feminino</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/impressas.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
+            src="memorybook/feminino/feminino2.jpg" alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Memórias Impressas</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/provence.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
+            src="memorybook/provence/provence.jpg" alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Provence</p>
+      </div>
+      <div class="text-center">
+        <a href="memorybook/botanic.html">
+          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/botanic/botanic1.jpg"
+            alt="">
+        </a>
+        <p class="text-gray-700 font-medium">Vintage Botanic</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
+    <div class="container mx-auto text-center" style="background-color: #412f26">
+      <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.
+      </p>
       <div class="flex justify-center space-x-4 mt-2">
-        <a href="#" class="hover:text-gray-400">Facebook</a>
-        <a href="#" class="hover:text-gray-400">Instagram</a>
-        <a href="#" class="hover:text-gray-400">Pinterest</a>
+        <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank"
+          class="hover:text-gray-400">Instagram</a>
         <a href="#" class="hover:text-gray-400">WhatsApp</a>
       </div>
     </div>
   </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.js"></script>
 </body>
+
 </html>
