@@ -6,7 +6,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - Sabrina Camara Atelier</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <script src="js/google-tag-manager.js"></script>
+
+  <script>
+    (function(w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+      
+      // Adiciona um log no console para confirmar o carregamento do GTM
+      j.onload = function() {
+        console.log('Google Tag Manager carregado com sucesso.');
+      };
+      j.onerror = function() {
+        console.error('Erro ao carregar o Google Tag Manager.');
+      };
+    })(window, document, 'script', 'dataLayer', 'GTM-WXJ2B6KM');
+  </script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
@@ -92,6 +116,7 @@
       color: #dbdbdb; /* Cor dourada para destacar */
     }
   </style>
+
 </head>
 <body class="bg-gray-100">
 
