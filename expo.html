@@ -59,45 +59,50 @@
 
   <header class="navbar">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-        <div>
-            <img src="image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-        </div>
-        <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative" style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-            <a href="index.html" class="hover:text-gray-900">Home</a>
-            <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
-            <a href="#" class="hover:text-gray-900">Livro de Memórias</a>
-            <a href="bio.html" class="hover:text-gray-900">Bio</a>
-            <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-            <a href="#" class="hover:text-gray-900">Contato</a>
-        </nav>
-        
-        <!-- Hamburger Menu for Mobile -->
-        <div class="md:hidden">
-            <button id="menu-button" class="text-gray-800 focus:outline-none">
-                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                </svg>
-            </button>
-        </div>
-    </div>
-</header>
+      <div>
+        <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
+      </div>
+      <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
+        style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+        <a href="../index.html" class="hover:text-gray-900">Home</a>
+        <a href="../bouquet.html" class="hover:text-gray-900">Casamentos</a>
+        <a href="../memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+        <a href="../bio.html" class="hover:text-gray-900">Bio</a>
+        <a href="../projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+        <a href="../contato.html" class="hover:text-gray-900">Contato</a>
+      </nav>
 
-<!-- Mobile Menu -->
-<nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden">
-    <div class="flex flex-col px-6 py-4">
-        <a href="index.html" class="hover:text-gray-900 py-2">Home</a>
-        <a href="#" class="hover:text-gray-900 py-2">Livro de Memórias</a>
-        <a href="bio.html" class="hover:text-gray-900 py-2">Bio</a>
-        <a href="#" class="hover:text-gray-900 py-2">Projetos Especiais</a>
-        <a href="#" class="hover:text-gray-900 py-2">Contato</a>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-</nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
+    style="font-family: 'Cinzel', sans-serif;">
+    <div class="flex flex-col px-6 py-4 space-y-2">
+      <a href="../index.html" class="hover:text-gray-900">Home</a>
+      <a href="../bouquet.html" class="hover:text-gray-900">Casamentos</a>
+      <a href="../memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+      <a href="../bio.html" class="hover:text-gray-900">Bio</a>
+      <a href="../projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+      <a href="../contato.html" class="hover:text-gray-900">Contato</a>
+    </div>
+  </nav>
 
   <section
     class="relative bg-center bg-no-repeat bg-cover bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply fade-in">
     <div
       class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 backdrop-blur-sm bg-opacity-70 bg-black/40 rounded-lg">
-      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl" style="overflow-y: hidden;">Expo
+      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
+        style="overflow-y: hidden; font-family: 'Cinzel';">Expo
         Marcelo Min</h1>
       <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
       </div>
@@ -168,6 +173,19 @@
     </div>
   </div>
 
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
+    <div class="container mx-auto text-center" style="background-color: #412f26">
+      <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.
+      </p>
+      <div class="flex justify-center space-x-4 mt-2">
+        <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank"
+          class="hover:text-gray-400">Instagram</a>
+        <a href="#" class="hover:text-gray-400">WhatsApp</a>
+      </div>
+    </div>
+  </footer>
+
   <!-- Modal -->
   <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
     <span class="absolute top-4 right-6 text-white text-3xl cursor-pointer" onclick="closeModal()">&times;</span>
@@ -229,6 +247,35 @@
     }
   </script>
 
+<script> 
+
+  // Funcionalidade do Menu Hambúrguer com Animação
+  const menuButton = document.getElementById('menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuButton.addEventListener('click', () => {
+    if (mobileMenu.classList.contains('hidden')) {
+      // Remove a classe 'hidden' e aplica as classes de animação para abrir
+      mobileMenu.classList.remove('hidden');
+      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
+
+      setTimeout(() => {
+        mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
+        mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
+      }, 10); // Delay curto para iniciar a animação
+    } else {
+      // Aplica as classes de animação para fechar
+      mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
+
+      // Espera a animação terminar antes de ocultar o menu
+      setTimeout(() => {
+        mobileMenu.classList.add('hidden');
+      }, 300); // Duração da animação em milissegundos
+    }
+  });
+
+</script>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
