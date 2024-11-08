@@ -21,6 +21,7 @@ navbar {
   }
 
   .navbar a {
+    font-size: 18px;
     font-family: 'Cinzel', sans-serif;
     transition: ease-in 0.2s;
   }

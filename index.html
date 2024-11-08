@@ -1,430 +1,492 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Sabrina Camara Atelier</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<<<<<<< HEAD <html lang="pt-br">
 
-  <script>
-    (function(w, d, s, l, i) {
-      w[l] = w[l] || [];
-      w[l].push({
-        'gtm.start': new Date().getTime(),
-        event: 'gtm.js'
-      });
-      var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s),
-        dl = l != 'dataLayer' ? '&l=' + l : '';
-      j.async = true;
-      j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-      f.parentNode.insertBefore(j, f);
-      
-      // Adiciona um log no console para confirmar o carregamento do GTM
-      j.onload = function() {
-        console.log('Google Tag Manager carregado com sucesso.');
-      };
-      j.onerror = function() {
-        console.error('Erro ao carregar o Google Tag Manager.');
-      };
-    })(window, document, 'script', 'dataLayer', 'GTM-WXJ2B6KM');
-  </script>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Sabrina Camara Atelier</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
 
+        // Adiciona um log no console para confirmar o carregamento do GTM
+        j.onload = function () {
+          console.log('Google Tag Manager carregado com sucesso.');
+        };
+        j.onerror = function () {
+          console.error('Erro ao carregar o Google Tag Manager.');
+        };
+      })(window, document, 'script', 'dataLayer', 'GTM-WXJ2B6KM');
+    </script>
 
-    .carousel {
-      font-family: 'Cinzel', sans-serif;
-      overflow: hidden;
-      position: relative;
-      width: 100%;
-      height: 650px;
-    }
+    <style>
+      /* Importando as fontes */
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-    .carousel-inner {
-      display: flex;
-      transition: transform 1s ease-in-out;
-      width: 100%;
-    }
+      /* Estilização geral do Carousel */
+      .carousel {
+        font-family: 'Cinzel', sans-serif;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        /* Preenche a altura total da tela */
+      }
 
-    .carousel-item {
-      min-width: 100%;
-      flex-shrink: 0;
-      position: relative;
-      height: 636px;
-    }
+      .carousel-inner {
+        display: flex;
+        transition: transform 1s ease-in-out;
+        width: 100%;
+      }
 
-    .carousel-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+      .carousel-item {
+        min-width: 100%;
+        flex-shrink: 0;
+        position: relative;
+        height: 100vh;
+        /* Cada item ocupa a altura total */
+      }
 
-    .carousel-content {
-      position: absolute;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.4);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: white;
-    }
+      .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
 
-    .carousel-content h2 {
-      font-size: 4rem;
-      font-weight: 300;
-    }
+      .carousel-content {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.4);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+      }
 
-    .carousel button{
+      .carousel-content h2 {
+        font-size: 4rem;
+        font-weight: 300;
+      }
+
+      .carousel button {
         transition: ease-in 0.2s;
         border: 1px solid #dbdbdb;
-    }
+      }
 
-    .carousel button:hover{
+      .carousel button:hover {
         color: #dbdbdb;
         background-color: #dbdbdb00;
-        border: white;
         border: 1px solid #dbdbdb;
-    }
+      }
 
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.9); /* Fundo branco com transparência */
-      backdrop-filter: blur(10px); /* Efeito de desfoque de fundo */
-      transition: background 0.3s ease;
-    }
+      /* Estilização da Navbar (mantida) */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.9);
+        /* Fundo branco com transparência */
+        backdrop-filter: blur(10px);
+        /* Efeito de desfoque de fundo */
+        transition: background 0.3s ease;
+      }
 
-    .navbar img {
-      max-height: 50px;
-    }
+      .navbar img {
+        max-height: 50px;
+      }
 
-    .navbar a {
-      font-family: 'Cinzel', sans-serif;
-      transition: ease-in 0.2s;
-    }
+      .navbar a {
+        font-size: 18px;
+        font-family: 'Cinzel', sans-serif;
+        transition: ease-in 0.2s;
+      }
 
-    .navbar a:hover {
-      color: #dbdbdb; /* Cor dourada para destacar */
-    }
-  </style>
+      .navbar a:hover {
+        color: #dbdbdb;
+        /* Cor dourada para destacar */
+      }
+    </style>
 
-</head>
-<body class="bg-gray-100">
+  </head>
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <body class="bg-gray-100">
 
-<!-- Botão do WhatsApp -->
-<a href="https://wa.me/5511992760856" target="_blank" class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
-  <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
-</a>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
 
-<header class="navbar">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div>
-      <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-    </div>
-    <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative" style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-      <a href="index.html" class="hover:text-gray-900">Home</a>
-      <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-      <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
-      <a href="memorybook.html" class="hover:text-gray-900">Memories Book</a>
-      <a href="bio.html" class="hover:text-gray-900">Bio</a>
-      <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+    <!-- Botão do WhatsApp -->
+    <a href="https://wa.me/5511992760856" target="_blank"
+      class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
+      <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
+    </a>
+
+    <header class="navbar">
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div>
+          <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
+        </div>
+        <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
+          style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+          <a href="index.html" class="hover:text-gray-900">Home</a>
+          <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
+          <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
+          <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+          <a href="bio.html" class="hover:text-gray-900">Bio</a>
+          <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+        </nav>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-800 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
+      style="font-family: 'Cinzel', sans-serif;">
+      <div class="flex flex-col px-6 py-4 space-y-2">
+        <a href="index.html" class="hover:text-gray-900">Home</a>
+        <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
+        <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+        <a href="bio.html" class="hover:text-gray-900">Bio</a>
+        <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+        <a href="contato.html" class="hover:text-gray-900">Contato</a>
+      </div>
     </nav>
 
-    <!-- Hamburger Menu for Mobile -->
-    <div class="md:hidden">
-      <button id="menu-button" class="text-gray-800 focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-
- <!-- Mobile Menu -->
- <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50" style="font-family: 'Cinzel', sans-serif;">
-  <div class="flex flex-col px-6 py-4 space-y-2">
-    <a href="index.html" class="hover:text-gray-900">Home</a>
-    <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
-    <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-    <a href="bio.html" class="hover:text-gray-900">Bio</a>
-    <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-    <a href="contato.html" class="hover:text-gray-900">Contato</a>
-  </div>
-</nav>
-
-<!-- Hero Carousel Section -->
-<section class="relative carousel">
-  <div class="carousel-inner">
-      <div class="carousel-item">
+    <!-- Hero Carousel Section -->
+    <section class="relative carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item">
           <img src="image/capa.png" alt="Imagem de Casamento 1">
           <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end items-start p-14">
-              <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Casamentos</h2>
-              <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-                <a href="bouquet.html"> Acessar </a>
-              </button>
+            <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Casamentos</h2>
+            <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+              <a href="bouquet.html"> Acessar </a>
+            </button>
           </div>
-      </div>
-      <div class="carousel-item">
+        </div>
+        <div class="carousel-item">
           <img src="image/bouquet_preservation.jpg" alt="Imagem de Casamento 2">
           <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end items-start p-14">
-              <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Bouquet Preservation</h2>
-              <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-                <a href="bouquet.html"> Acessar </a>
-              </button>
+            <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Bouquet Preservation</h2>
+            <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+              <a href="bouquet.html"> Acessar </a>
+            </button>
           </div>
-      </div>
-      <div class="carousel-item">
+        </div>
+        <div class="carousel-item">
           <img src="image/weddingbook.jpg" alt="Imagem de Casamento 3">
           <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-end items-start p-14">
-              <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Wedding Book</h2>
-              <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-                <a href="wedding.html"> Acessar </a>
-              </button>
+            <h2 class="text-5xl font-bold text-white" style="font-weight: 100;">Wedding Book</h2>
+            <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+              <a href="wedding.html"> Acessar </a>
+            </button>
           </div>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-  <!-- JavaScript for Carousel -->
-  <script>
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
-    const carouselInner = document.querySelector('.carousel-inner');
+    <!-- JavaScript for Carousel -->
+    <script>
+      let currentIndex = 0;
+      const items = document.querySelectorAll('.carousel-item');
+      const totalItems = items.length;
+      const carouselInner = document.querySelector('.carousel-inner');
 
-    function showNextItem() {
-      currentIndex = (currentIndex + 1) % totalItems;
-      const offset = -currentIndex * 100; // Calcula a posição de deslocamento
-      carouselInner.style.transform = `translateX(${offset}%)`; // Move a faixa de itens
-    }
+      function showNextItem() {
+        currentIndex = (currentIndex + 1) % totalItems;
+        const offset = -currentIndex * 100; // Calcula a posição de deslocamento
+        carouselInner.style.transform = `translateX(${offset}%)`; // Move a faixa de itens
+      }
 
-    setInterval(showNextItem, 5000); // Muda de imagem a cada 5 segundos
+      setInterval(showNextItem, 5000); // Muda de imagem a cada 5 segundos
 
-    
 
-  </script>
 
-<section class="container mx-auto my-12 p-6">
-  <h3 class="text-center text-3xl font-bold mb-6" style="font-family: 'Cinzel', serif; color: #413025">Meus Princípios</h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <!-- Princípio 1: Carinho -->
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #412f26">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+    </script>
+
+    <section class="container mx-auto my-12 p-6">
+      <h3 class="text-center text-3xl font-bold mb-6" style="font-family: 'Cinzel', serif; color: #413025">Meus
+        Princípios</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Princípio 1: Carinho -->
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" style="color: #412f26">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
           </svg>
           <h4 class="text-xl font-bold mb-2" style="font-family: 'Cinzel', sans-serif; color: #412f26">AMOR</h4>
           <p class="text-gray-700 text-center" style="font-family: 'PT Serif', serif; color: #412f26">
-            Cada buquê que aqui chega, é eternizado com total dedicação e carinho. Buscando trazer a energia de cada momento vivido pelo casal no dia do casamento.
+            Cada buquê que aqui chega, é eternizado com total dedicação e carinho. Buscando trazer a energia de cada
+            momento vivido pelo casal no dia do casamento.
 
           </p>
-      </div>
+        </div>
 
-      <!-- Princípio 2: Confiança -->
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
+        <!-- Princípio 2: Confiança -->
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
           <img src="image/confiança.png" alt="" width="80px">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14h4v4h-4v-4zm0-10h4v4h-4V4zm0 6h4v4h-4v-4zm2 6h2v4h-2v-4zm-6-6h2v4H6v-4zm0 6h2v4H6v-4zm0-10h2v4H6V4zm0 2h2v4H6V6zm0 8h2v4H6v-4zm16-8h-2v4h2V6zm-2 6h-2v4h2v-4zm-2 6h-2v4h2v-4zm-2-6h-2v4h2v-4zm-4 6h-2v4h2v-4z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M10 14h4v4h-4v-4zm0-10h4v4h-4V4zm0 6h4v4h-4v-4zm2 6h2v4h-2v-4zm-6-6h2v4H6v-4zm0 6h2v4H6v-4zm0-10h2v4H6V4zm0 2h2v4H6V6zm0 8h2v4H6v-4zm16-8h-2v4h2V6zm-2 6h-2v4h2v-4zm-2 6h-2v4h2v-4zm-2-6h-2v4h2v-4zm-4 6h-2v4h2v-4z" />
           </svg>
           <h4 class="text-xl font-bold mb-2" style="font-family: 'Cinzel', sans-serif; color: #413025">QUALIDADE</h4>
           <p class="text-gray-700 text-center" style="font-family: 'PT Serif', serif; color: #413025">
-            Buscamos excelência e alto padrão de qualidade em cada processo e toda matéria prima que são utilizadas em nosso ateliê.
+            Buscamos excelência e alto padrão de qualidade em cada processo e toda matéria prima que são utilizadas em
+            nosso ateliê.
           </p>
-      </div>
+        </div>
 
-      <!-- Princípio 3: Amor -->
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" style="color: #412f26">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+        <!-- Princípio 3: Amor -->
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-800 mb-4" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor" style="color: #412f26">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
           </svg>
           <h4 class="text-xl font-bold mb-2" style="font-family: 'Cinzel', sans-serif; color: #412f26">Sofisticação</h4>
           <p class="text-gray-700 text-center" style="font-family: 'PT Serif', serif; color: #412f26">
-            As peças são exaustivamente pensadas, antes do lançamento, com o objetivo de oferecer elegância no Dècor do lar de cada casal. Unindo afeto com sofisticação através da arte.
+            As peças são exaustivamente pensadas, antes do lançamento, com o objetivo de oferecer elegância no Dècor do
+            lar de cada casal. Unindo afeto com sofisticação através da arte.
           </p>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
 
-  <!-- Seções restantes -->
-  <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg" style="font-family: 'Cinzel', sans-serif;">
-    <div class="flex flex-col lg:flex-row items-center">
+    <!-- Seções restantes -->
+    <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg"
+      style="font-family: 'Cinzel', sans-serif;">
+      <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 p-6">
-            <h3 class="text-3xl font-bold mb-4" style="font-size: 40px; color: #412f26">Bouquet Preservation</h3>
-            <p class="text-gray-700 italic mb-4" style="font-size: 20px; color: #412f26">“Olha as flores que eu trouxe pra você amor<br>São para comemorar aquele dia<br>Que passei a viver do teu lado...”</p>
-            <p class="text-gray-500 mb-4">(Los Hermanos)</p>
-            <button class="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-900" style="transition: ease-in, 0.5s; color: #cfcfcf; background-color: #413025;"><a href="bouquet.html"> Acessar </a></button>
+          <h3 class="text-3xl font-bold mb-4" style="font-size: 40px; color: #412f26">Bouquet Preservation</h3>
+          <p class="text-gray-700 italic mb-4" style="font-size: 20px; color: #412f26">“Olha as flores que eu trouxe pra
+            você amor<br>São para comemorar aquele dia<br>Que passei a viver do teu lado...”</p>
+          <p class="text-gray-500 mb-4">(Los Hermanos)</p>
+          <button class="px-4 py-2 bg-gray-400 text-white rounded hover:bg-gray-900"
+            style="transition: ease-in, 0.5s; color: #cfcfcf; background-color: #413025;"><a href="bouquet.html">
+              Acessar </a></button>
         </div>
         <div class="lg:w-1/2">
-            <img src="image/bouquet_preservation.jpg" alt="Preservação de Buquê" class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+          <img src="image/bouquet_preservation.jpg" alt="Preservação de Buquê"
+            class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg" style="font-family: 'Cinzel', sans-serif;">
-    <div class="flex flex-col-reverse lg:flex-row items-center">
+    <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg"
+      style="font-family: 'Cinzel', sans-serif;">
+      <div class="flex flex-col-reverse lg:flex-row items-center">
         <div class="lg:w-1/2">
-            <img src="image/weddingbook.jpg" alt="Livro de Visitas de Casamento" class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+          <img src="image/weddingbook.jpg" alt="Livro de Visitas de Casamento"
+            class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
         </div>
         <div class="lg:w-1/2 p-6">
-            <h3 class="text-3xl font-bold mb-4" style="color: #412f26">Wedding Guest Book</h3>
-            <p class="text-gray-700 mb-4" style="font-size: 25px; color: #412f26">“O que tem de ser tem muita força...”</p>
-            <p class="text-gray-500 mb-4">(Guimarães Rosa)</p>
-            <button class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-100" style="transition: ease-in, 0.5s; color: #cfcfcf; background-color: #413025;"> <a href="wedding.html"> Acessar </a></button>
+          <h3 class="text-3xl font-bold mb-4" style="color: #412f26">Wedding Guest Book</h3>
+          <p class="text-gray-700 mb-4" style="font-size: 25px; color: #412f26">“O que tem de ser tem muita força...”
+          </p>
+          <p class="text-gray-500 mb-4">(Guimarães Rosa)</p>
+          <button class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-100"
+            style="transition: ease-in, 0.5s; color: #cfcfcf; background-color: #413025;"> <a href="wedding.html">
+              Acessar </a></button>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
-    <div class="flex flex-col lg:flex-row items-center">
+    <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
+      <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 p-6">
-            <h3 class="text-3xl font-bold mb-4 justify-center items-center text-center" style="font-family: 'Cinzel', sans-serif; color: #412f26">Livro de Memórias</h3>
-            <p class="text-gray-500 mb-4 justify-center items-center text-center" style="font-family: 'PT Serif', serif; font-size: 20px;">
-                Essa lembrança que nos vem às vezes...<br>
-                folha súbita<br>
-                que tomba<br>
-                abrindo na memória a flor silenciosa<br>
-                de mil e uma pétalas concêntricas...<br>
-                Essa lembrança... mas de onde? de quem?<br>
-                Essa lembrança talvez nem seja nossa,<br>
-                mas de alguém que, pensando em nós, só possa<br>
-                mandar um eco do seu pensamento<br>
-                nessa mensagem pelos céus perdida...<br>
-                Ah! tão perdida<br>
-                que nem se possa saber mais de quem!
-            </p>
-            <p class="text-gray-500 mb-4 justify-center items-center text-center">(Mario Quintana)</p>
+          <h3 class="text-3xl font-bold mb-4 justify-center items-center text-center"
+            style="font-family: 'Cinzel', sans-serif; color: #412f26">Livro de Memórias</h3>
+          <p class="text-gray-500 mb-4 justify-center items-center text-center"
+            style="font-family: 'PT Serif', serif; font-size: 20px;">
+            Essa lembrança que nos vem às vezes...<br>
+            folha súbita<br>
+            que tomba<br>
+            abrindo na memória a flor silenciosa<br>
+            de mil e uma pétalas concêntricas...<br>
+            Essa lembrança... mas de onde? de quem?<br>
+            Essa lembrança talvez nem seja nossa,<br>
+            mas de alguém que, pensando em nós, só possa<br>
+            mandar um eco do seu pensamento<br>
+            nessa mensagem pelos céus perdida...<br>
+            Ah! tão perdida<br>
+            que nem se possa saber mais de quem!
+          </p>
+          <p class="text-gray-500 mb-4 justify-center items-center text-center">(Mario Quintana)</p>
         </div>
         <div class="lg:w-1/2">
-            <img src="image/memories_book.jpg" alt="Livro de Memórias" class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+          <img src="image/memories_book.jpg" alt="Livro de Memórias"
+            class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Bordados -->
-<section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
-    <div class="flex flex-col-reverse lg:flex-row items-center">
+    <!-- Bordados -->
+    <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
+      <div class="flex flex-col-reverse lg:flex-row items-center">
         <div class="lg:w-1/2">
-            <img src="image/bordado.png" alt="Bordados" class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
+          <img src="image/bordado.png" alt="Bordados"
+            class="rounded-lg shadow-md transform transition-transform duration-300 hover:scale-105">
         </div>
         <div class="lg:w-1/2 p-6">
-            <h3 class="text-3xl font-bold mb-4 text-center" style="font-family: 'Cinzel', serif; color: #412f26">Bordados</h3>
-            <p class="text-gray-700 italic mb-4 text-center" style="font-family: 'PT Serif', serif; font-size: 20px; color: #412f26">“Temos a arte para não morrer da verdade.”</p>
-            <p class="text-gray-500 mb-4 text-center">(F. Nietzsche)</p>
-            <button class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-400 mx-auto block"  style="font-family: 'Cinzel'; transition: ease-in, 0.5s; background-color: #413025;">ACESSAR</button>
+          <h3 class="text-3xl font-bold mb-4 text-center" style="font-family: 'Cinzel', serif; color: #412f26">Bordados
+          </h3>
+          <p class="text-gray-700 italic mb-4 text-center"
+            style="font-family: 'PT Serif', serif; font-size: 20px; color: #412f26">“Temos a arte para não morrer da
+            verdade.”</p>
+          <p class="text-gray-500 mb-4 text-center">(F. Nietzsche)</p>
+          <button class="px-4 py-2 bg-gray-800 text-white rounded hover:bg-gray-400 mx-auto block"
+            style="font-family: 'Cinzel'; transition: ease-in, 0.5s; background-color: #413025;">ACESSAR</button>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
 
 
- <!-- Depoimentos Section -->
-<section class="container mx-auto my-12 p-6">
-  <h3 class="text-center text-3xl font-bold mb-6" style="font-family: 'Cinzel', serif; font-weight: 340; color: #412f26">DEPOIMENTOS</h3>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif; color: #412f26">
-          <p class="italic mb-4 text-lg">"Que maravilhoso!!! Sempre falei que não ia querer jogar o meu buquê porque queria eternizar ele...
-              mas nunca havia encontrado um trabalho que me desse a segurança de fazer isso de uma forma tão maravilhosa. Que venha Maio, para eu casar e entregar meu buquê em suas mãos!"</p>
+    <!-- Depoimentos Section -->
+    <section class="container mx-auto my-12 p-6">
+      <h3 class="text-center text-3xl font-bold mb-6"
+        style="font-family: 'Cinzel', serif; font-weight: 340; color: #412f26">DEPOIMENTOS</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300"
+          style="font-family: 'PT Serif', serif; color: #412f26">
+          <p class="italic mb-4 text-lg">"Que maravilhoso!!! Sempre falei que não ia querer jogar o meu buquê porque
+            queria eternizar ele...
+            mas nunca havia encontrado um trabalho que me desse a segurança de fazer isso de uma forma tão maravilhosa.
+            Que venha Maio, para eu casar e entregar meu buquê em suas mãos!"</p>
           <p class="text-right font-semibold">Ana Claudia</p>
-      </div>
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif; color: #412f26">
-          <p class="italic mb-4 text-lg">"...quando vi o seu trabalho fiquei emocionada...e até hoje me emociono...e a gente só se falou pessoalmente uma vez, parece que te conheço há tanto tempo... É um privilégio ter te conhecido. Pessoas como você fazem parte da parte do mundo que vale a pena. Obrigada pelo carinho e pela magia que chega aqui toda vez que abro um livro seu!"</p>
+        </div>
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300"
+          style="font-family: 'PT Serif', serif; color: #412f26">
+          <p class="italic mb-4 text-lg">"...quando vi o seu trabalho fiquei emocionada...e até hoje me emociono...e a
+            gente só se falou pessoalmente uma vez, parece que te conheço há tanto tempo... É um privilégio ter te
+            conhecido. Pessoas como você fazem parte da parte do mundo que vale a pena. Obrigada pelo carinho e pela
+            magia que chega aqui toda vez que abro um livro seu!"</p>
           <p class="text-right font-semibold">Beatriz</p>
-      </div>
-      <div class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300" style="font-family: 'PT Serif', serif; color: #412f26">
-          <p class="italic mb-4 text-lg">"Sabrina, não sei o que dizer. Palavras me fogem à mente e corações juntos a pouco, o nosso marido amou o que era. Quando o embrulho foi desfeito ficamos mudos, ele sentou e ficou recordando aquele momento. Em segundos ele se deu conta que era nosso buquê! Não sei como agradecer pela experiência, relembrando todos os detalhes e com a certeza que nosso amor será eterno!"</p>
+        </div>
+        <div
+          class="bg-white p-6 shadow-lg rounded-lg flex flex-col justify-center items-center text-center transform hover:scale-105 transition-transform duration-300"
+          style="font-family: 'PT Serif', serif; color: #412f26">
+          <p class="italic mb-4 text-lg">"Sabrina, não sei o que dizer. Palavras me fogem à mente e corações juntos a
+            pouco, o nosso marido amou o que era. Quando o embrulho foi desfeito ficamos mudos, ele sentou e ficou
+            recordando aquele momento. Em segundos ele se deu conta que era nosso buquê! Não sei como agradecer pela
+            experiência, relembrando todos os detalhes e com a certeza que nosso amor será eterno!"</p>
           <p class="text-right font-semibold">Flávia</p>
+        </div>
       </div>
-  </div>
-</section>
+    </section>
 
-<section class="bg-gray-100 py-12" id="contato">
-  <div class="container mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-4" style="font-family: 'Cinzel', sans-serif; color: #412f26">Entre em contato!</h2>
-      <p class="text-gray-700 mb-6" style="font-family: 'PT Serif', sans-serif; color: #412f26">Se você tiver alguma dúvida ou quiser mais informações, entre em contato comigo pelo WhatsApp!</p>
-      <a href="https://wa.me/5511992760856" target="_blank" class="bg-green-500 text-white rounded-full px-6 py-3 shadow-lg hover:bg-green-600 transition-colors duration-200">
+    <section class="bg-gray-100 py-12" id="contato">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-4" style="font-family: 'Cinzel', sans-serif; color: #412f26">Entre em contato!
+        </h2>
+        <p class="text-gray-700 mb-6" style="font-family: 'PT Serif', sans-serif; color: #412f26">Se você tiver alguma
+          dúvida ou quiser mais informações, entre em contato comigo pelo WhatsApp!</p>
+        <a href="https://wa.me/5511992760856" target="_blank"
+          class="bg-green-500 text-white rounded-full px-6 py-3 shadow-lg hover:bg-green-600 transition-colors duration-200">
           WhatsApp
-      </a>
-  </div>
-</section>
-
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
-    <div class="container mx-auto text-center" style="background-color: #412f26">
-      <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.</p>
-      <div class="flex justify-center space-x-4 mt-2">
-        <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank" class="hover:text-gray-400">Instagram</a>
-        <a href="#" class="hover:text-gray-400">WhatsApp</a>
+        </a>
       </div>
-    </div>
-  </footer>
-  
-  
-
-</body>
+    </section>
 
 
-
-<script> 
-
-  // Funcionalidade do Menu Hambúrguer com Animação
-  const menuButton = document.getElementById('menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
-
-  menuButton.addEventListener('click', () => {
-    if (mobileMenu.classList.contains('hidden')) {
-      // Remove a classe 'hidden' e aplica as classes de animação para abrir
-      mobileMenu.classList.remove('hidden');
-      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
-
-      setTimeout(() => {
-        mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
-        mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
-      }, 10); // Delay curto para iniciar a animação
-    } else {
-      // Aplica as classes de animação para fechar
-      mobileMenu.classList.remove('opacity-100', 'translate-y-0');
-      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
-
-      // Espera a animação terminar antes de ocultar o menu
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300); // Duração da animação em milissegundos
-    }
-  });
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
+      <div class="container mx-auto text-center" style="background-color: #412f26">
+        <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.
+        </p>
+        <div class="flex justify-center space-x-4 mt-2">
+          <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank"
+            class="hover:text-gray-400">Instagram</a>
+          <a href="#" class="hover:text-gray-400">WhatsApp</a>
+        </div>
+      </div>
+    </footer>
 
 
-   // Seleciona todos os links que levam a uma âncora
-   const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
-smoothScrollLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault(); // Previne o comportamento padrão do link
+  </body>
 
-    const targetId = this.getAttribute('href'); // Pega o ID da âncora
-    const targetElement = document.querySelector(targetId); // Seleciona o elemento de destino
 
-    // Rola suavemente até o elemento
-    targetElement.scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+
+  <script>
+
+    // Funcionalidade do Menu Hambúrguer com Animação
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuButton.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('hidden')) {
+        // Remove a classe 'hidden' e aplica as classes de animação para abrir
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
+
+        setTimeout(() => {
+          mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
+          mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
+        }, 10); // Delay curto para iniciar a animação
+      } else {
+        // Aplica as classes de animação para fechar
+        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
+
+        // Espera a animação terminar antes de ocultar o menu
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300); // Duração da animação em milissegundos
+      }
     });
-  });
-});
 
 
-</script> 
+    // Seleciona todos os links que levam a uma âncora
+    const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
-</html>
+    smoothScrollLinks.forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault(); // Previne o comportamento padrão do link
+
+        const targetId = this.getAttribute('href'); // Pega o ID da âncora
+        const targetElement = document.querySelector(targetId); // Seleciona o elemento de destino
+
+        // Rola suavemente até o elemento
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+
+  </script>
+
+  </html>
