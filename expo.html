@@ -57,6 +57,13 @@
 
 <body class="bg-gray-50">
 
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/5511992760856" target="_blank"
+    class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
+    <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
+  </a>
+
+
   <header class="navbar">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
       <div>
@@ -98,7 +105,7 @@
   </nav>
 
   <section
-    class="relative bg-center bg-no-repeat bg-cover bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply fade-in">
+    class="relative bg-center bg-no-repeat bg-cover bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply fade-in" style="min-height: 100vh;">
     <div
       class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 backdrop-blur-sm bg-opacity-70 bg-black/40 rounded-lg">
       <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
@@ -247,35 +254,35 @@
     }
   </script>
 
-<script> 
+  <script>
 
-  // Funcionalidade do Menu Hambúrguer com Animação
-  const menuButton = document.getElementById('menu-button');
-  const mobileMenu = document.getElementById('mobile-menu');
+    // Funcionalidade do Menu Hambúrguer com Animação
+    const menuButton = document.getElementById('menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-  menuButton.addEventListener('click', () => {
-    if (mobileMenu.classList.contains('hidden')) {
-      // Remove a classe 'hidden' e aplica as classes de animação para abrir
-      mobileMenu.classList.remove('hidden');
-      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
+    menuButton.addEventListener('click', () => {
+      if (mobileMenu.classList.contains('hidden')) {
+        // Remove a classe 'hidden' e aplica as classes de animação para abrir
+        mobileMenu.classList.remove('hidden');
+        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
 
-      setTimeout(() => {
-        mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
-        mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
-      }, 10); // Delay curto para iniciar a animação
-    } else {
-      // Aplica as classes de animação para fechar
-      mobileMenu.classList.remove('opacity-100', 'translate-y-0');
-      mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
+        setTimeout(() => {
+          mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
+          mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
+        }, 10); // Delay curto para iniciar a animação
+      } else {
+        // Aplica as classes de animação para fechar
+        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
+        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
 
-      // Espera a animação terminar antes de ocultar o menu
-      setTimeout(() => {
-        mobileMenu.classList.add('hidden');
-      }, 300); // Duração da animação em milissegundos
-    }
-  });
+        // Espera a animação terminar antes de ocultar o menu
+        setTimeout(() => {
+          mobileMenu.classList.add('hidden');
+        }, 300); // Duração da animação em milissegundos
+      }
+    });
 
-</script>
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 </body>
