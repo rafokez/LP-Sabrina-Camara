@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-* {
-    overflow-x: hidden;
-}
 
 navbar {
     position: fixed;
@@ -29,3 +26,14 @@ navbar {
   .navbar a:hover {
     color: #dbdbdb; /* Cor dourada para destacar */
   }
+
+  #mobile-menu {
+  position: fixed; /* Alterado de absolute para fixed */
+  top: 64px; /* Ajuste a posição conforme necessário */
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 50; /* Para sobrepor o conteúdo da página */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
