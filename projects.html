@@ -80,52 +80,41 @@
 
 <body class="bg-gray-100">
 
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
+        style="display:none;visibility:hidden"></iframe></noscript>
+  
     <!-- Botão do WhatsApp -->
-    <a href="https://wa.me/5511992760856" target="_blank"
-        class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
-        <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
+    <a href="https://wa.me/11937211320" target="_blank"
+      class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
+      <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
     </a>
-
-
+  
     <header class="navbar">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div>
-                <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-            </div>
-            <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
-                style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-                <a href="../index.html" class="hover:text-gray-900">Home</a>
-                <a href="../bouquet.html" class="hover:text-gray-900">Casamentos</a>
-                <a href="../memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-                <a href="../bio.html" class="hover:text-gray-900">Bio</a>
-                <a href="../projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-                <a href="../contato.html" class="hover:text-gray-900">Contato</a>
-            </nav>
-
-            <!-- Hamburger Menu for Mobile -->
-            <div class="md:hidden">
-                <button id="menu-button" class="text-gray-800 focus:outline-none">
-                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
-                        stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M4 6h16M4 12h16m-7 6h7"></path>
-                    </svg>
-                </button>
-            </div>
+      <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div>
+          <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
         </div>
+        <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
+          style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+          <a href="index.html" class="hover:text-gray-900">Home</a>
+          <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
+          <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
+          <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+          <a href="bio.html" class="hover:text-gray-900">Bio</a>
+          <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+        </nav>
+  
+        <!-- Hamburger Menu for Mobile -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-gray-800 focus:outline-none">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
-
-    <!-- Mobile Menu -->
-    <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
-        style="font-family: 'Cinzel', sans-serif;">
-        <div class="flex flex-col px-6 py-4 space-y-2">
-            <a href="../index.html" class="hover:text-gray-900">Home</a>
-            <a href="../bouquet.html" class="hover:text-gray-900">Casamentos</a>
-            <a href="../memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-            <a href="../bio.html" class="hover:text-gray-900">Bio</a>
-            <a href="../projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-            <a href="../contato.html" class="hover:text-gray-900">Contato</a>
-        </div>
-    </nav>
 
     <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
         style="background-image: url('image/projects.png');">
@@ -167,7 +156,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
         <div class="container mx-auto text-center" style="background-color: #412f26">
@@ -183,34 +172,8 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.js"></script>
+    <script src="js/navbar.js"></script>
 
-    <script>
-        // Funcionalidade do Menu Hambúrguer com Animação
-        const menuButton = document.getElementById('menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuButton.addEventListener('click', () => {
-            if (mobileMenu.classList.contains('hidden')) {
-                // Remove a classe 'hidden' e aplica as classes de animação para abrir
-                mobileMenu.classList.remove('hidden');
-                mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
-
-                setTimeout(() => {
-                    mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
-                    mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
-                }, 10); // Delay curto para iniciar a animação
-            } else {
-                // Aplica as classes de animação para fechar
-                mobileMenu.classList.remove('opacity-100', 'translate-y-0');
-                mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
-
-                // Espera a animação terminar antes de ocultar o menu
-                setTimeout(() => {
-                    mobileMenu.classList.add('hidden');
-                }, 300); // Duração da animação em milissegundos
-            }
-        });
-    </script>
 </body>
 
 </html>
