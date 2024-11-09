@@ -7,6 +7,7 @@
   <title>Wedding Book</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.0/flowbite.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
@@ -99,62 +100,30 @@
 </head>
 
 <body class="bg-gray-100">
-  <!-- ########################################################### -->
-  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
-  <!-- ########################################################### -->
+  <!-- ################################################################### -->
+  <!-- IMPORTAÇÃO DA NAVBAR / GTM & MOBILE -->
+  <!-- ################################################################### -->
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Importa o arquivo HTML da navbar -->
+  <div id="navbar-container"></div>
+  <script>
+    // Carrega a navbar dinamicamente
+    fetch('navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar a navbar:', error));
+  </script>
 
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/11937211320" target="_blank"
-    class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
-    <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
-  </a>
+  <!-- Importa o Google Tag Manager -->
+  <script src="js/gtm-script.js"></script>
+  <script src="js/navbar.js"></script>
 
-  <header class="navbar">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div>
-        <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-      </div>
-      <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
-        style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-        <a href="index.html" class="hover:text-gray-900">Home</a>
-        <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-        <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
-        <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-        <a href="bio.html" class="hover:text-gray-900">Bio</a>
-        <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-      </nav>
 
-      <!-- Hamburger Menu for Mobile -->
-      <div class="md:hidden">
-        <button id="menu-button" class="text-gray-800 focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- Mobile Menu -->
-  <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
-    style="font-family: 'Cinzel', sans-serif;">
-    <div class="flex flex-col px-6 py-4 space-y-2">
-      <a href="index.html" class="hover:text-gray-900">Home</a>
-      <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-      <a href="memorybook.html" class="hover:text-gray-900">Wedding Book</a>
-      <a href="contato.html" class="hover:text-gray-900">Livro de Memórias</a>
-      <a href="bio.html" class="hover:text-gray-900">Bio</a>
-      <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-    </div>
-  </nav>
-
-  <!-- ########################################################### -->
-  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
-  <!-- ########################################################### -->
+  <!-- ################################################################### -->
+  <!-- IMPORTAÇÃO DA NAVBAR / GTM & MOBILE -->
+  <!-- ################################################################### -->
 
   <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
     style="background-image: url('image/weddingbook.jpg');">
@@ -199,65 +168,65 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <!-- Livro 1 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/paula_e_marcos.html">
+        <a href="weddingbook/livros/paula_e_marcos/paula_e_marcos.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/1.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_paula.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Paula & Marcos</p>
       </div>
       <!-- Livro 2 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/natalia_e_fernando.html">
+        <a href="weddingbook/livros/natalia_e_fernando/natalia_e_fernando.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/2.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_natalia.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Natália & Fernando</p>
       </div>
       <!-- Livro 3 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/camila_e_fernando.html">
+        <a href="weddingbook/livros/camila_e_fernando/camila_e_fernando.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/3.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_camila.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Camila & Fernando</p>
       </div>
       <!-- Livro 4 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/maite_e_joao.html">
+        <a href="weddingbook/livros/maite_e_joao/maite_e_joao.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/4.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_maite.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Maitê & João</p>
       </div>
       <!-- Livro 5 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/patricia_e_caio.html">
+        <a href="weddingbook/livros/patricia_e_caio/patricia_e_caio.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/5.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_patricia.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Patrícia & Caio</p>
       </div>
       <!-- Livro 6 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/thais_e_eduardo.html">
+        <a href="weddingbook/livros/thais_e_eduardo/thais_e_eduardo.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/6.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_thais.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Thais & Eduardo</p>
       </div>
       <!-- Livro 7 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/gabriela_e_pedro.html">
+        <a href="weddingbook/livros/gabriela_e_pedro/gabriela_e_pedro.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/7.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_gabriela.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Gabriela & Pedro</p>
       </div>
       <!-- Livro 8 -->
       <div class="text-center transform transition-transform duration-300 hover:scale-105">
-        <a href="books/os_classicos.html">
+        <a href="weddingbook/livros/classicos/os_classicos.html">
           <img class="h-60 sm:h-72 md:h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="image/wedding/8.jpg" alt="">
+            src="weddingbook/livros_iniciais/livro_classicos.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Os Clássicos</p>
       </div>
@@ -280,33 +249,6 @@
 
 
   <script>
-    // Funcionalidade do Menu Hambúrguer com Animação
-    const menuButton = document.getElementById('menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    menuButton.addEventListener('click', () => {
-      if (mobileMenu.classList.contains('hidden')) {
-        // Remove a classe 'hidden' e aplica as classes de animação para abrir
-        mobileMenu.classList.remove('hidden');
-        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]'); // Estado inicial
-
-        setTimeout(() => {
-          mobileMenu.classList.remove('opacity-0', 'translate-y-[-20px]');
-          mobileMenu.classList.add('opacity-100', 'translate-y-0'); // Estado final
-        }, 10); // Delay curto para iniciar a animação
-      } else {
-        // Aplica as classes de animação para fechar
-        mobileMenu.classList.remove('opacity-100', 'translate-y-0');
-        mobileMenu.classList.add('opacity-0', 'translate-y-[-20px]');
-
-        // Espera a animação terminar antes de ocultar o menu
-        setTimeout(() => {
-          mobileMenu.classList.add('hidden');
-        }, 300); // Duração da animação em milissegundos
-      }
-    });
-
-
     // Seleciona todos os links que levam a uma âncora
     const smoothScrollLinks = document.querySelectorAll('a[href^="#"]');
 
