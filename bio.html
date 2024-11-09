@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,55 +45,64 @@
     }
   </style>
 </head>
+
 <body class="bg-gray-100">
+  <!-- ########################################################### -->
+  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
+  <!-- ########################################################### -->
+
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
-    style="display:none;visibility:hidden"></iframe></noscript>
+      style="display:none;visibility:hidden"></iframe></noscript>
 
-<!-- Botão do WhatsApp -->
-<a href="https://wa.me/11937211320" target="_blank"
-  class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
-  <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
-</a>
+  <!-- Botão do WhatsApp -->
+  <a href="https://wa.me/11937211320" target="_blank"
+    class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
+    <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
+  </a>
 
-<header class="navbar">
-  <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-    <div>
-      <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
+  <header class="navbar">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div>
+        <img src="image/logo.png" alt="Logo Sabrina Camara Atelier">
+      </div>
+      <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
+        style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+        <a href="index.html" class="hover:text-gray-900">Home</a>
+        <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
+        <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
+        <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+        <a href="bio.html" class="hover:text-gray-900">Bio</a>
+        <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <div class="md:hidden">
+        <button id="menu-button" class="text-gray-800 focus:outline-none">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+      </div>
     </div>
-    <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
-      style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
+  </header>
+
+  <!-- Mobile Menu -->
+  <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
+    style="font-family: 'Cinzel', sans-serif;">
+    <div class="flex flex-col px-6 py-4 space-y-2">
       <a href="index.html" class="hover:text-gray-900">Home</a>
       <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-      <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
-      <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+      <a href="memorybook.html" class="hover:text-gray-900">Wedding Book</a>
+      <a href="contato.html" class="hover:text-gray-900">Livro de Memórias</a>
       <a href="bio.html" class="hover:text-gray-900">Bio</a>
       <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-    </nav>
-
-    <!-- Hamburger Menu for Mobile -->
-    <div class="md:hidden">
-      <button id="menu-button" class="text-gray-800 focus:outline-none">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 6h16M4 12h16m-7 6h7"></path>
-        </svg>
-      </button>
     </div>
-  </div>
-</header>
+  </nav>
 
-<!-- Mobile Menu -->
-<nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
-  style="font-family: 'Cinzel', sans-serif;">
-  <div class="flex flex-col px-6 py-4 space-y-2">
-    <a href="index.html" class="hover:text-gray-900">Home</a>
-    <a href="bouquet.html" class="hover:text-gray-900">Casamentos</a>
-    <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-    <a href="bio.html" class="hover:text-gray-900">Bio</a>
-    <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-    <a href="contato.html" class="hover:text-gray-900">Contato</a>
-  </div>
-</nav>
+  <!-- ########################################################### -->
+  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
+  <!-- ########################################################### -->
 
   <!-- Hero Image -->
   <section>
@@ -103,23 +113,31 @@
   <section class="container mx-auto my-12 p-6 bg-white shadow-lg rounded-lg">
     <h3 class="text-3xl font-bold mb-4 text-center justify-center" style="font-family: 'Cinzel', serif;">Bio</h3>
     <p class="text-gray-700 mb-4 text-justify justify-center" style="font-family: 'PT Serif', serif; font-size: 18px;">
-      Nasci e cresci em Manaus, família em que a energia do que é feminino – cozinhar, costurar, bordar, acolher – se mantém presente. Os saberes e fazeres de quatro gerações são a base deste trabalho artesanal que surpreende e emociona as pessoas.<br><br>
-      Na infância, passava tardes com vovó, ouvindo suas histórias, tentando sempre ajudá-la na cozinha e absorvia toda aquela atmosfera encantada.<br><br>
-      Já em São Paulo, a arquitetura foi me dando a base e o entendimento estético, para ao longo dos anos desenvolver o que faço hoje.<br><br>
-      Os buquês preservados, os quadros autorais, os livros que se transformam a cada novo cliente, são formas de (re)conexão com o que é verdadeiramente essencial para mim e para as pessoas com quem trabalho.<br><br>
-      Nesse processo, estabeleço vínculos, busco entender como meus clientes vivem e saber o que sonham, para a partir daí transformar ideias em objetos significativos para cada um deles.
+      Nasci e cresci em Manaus, família em que a energia do que é feminino – cozinhar, costurar, bordar, acolher – se
+      mantém presente. Os saberes e fazeres de quatro gerações são a base deste trabalho artesanal que surpreende e
+      emociona as pessoas.<br><br>
+      Na infância, passava tardes com vovó, ouvindo suas histórias, tentando sempre ajudá-la na cozinha e absorvia toda
+      aquela atmosfera encantada.<br><br>
+      Já em São Paulo, a arquitetura foi me dando a base e o entendimento estético, para ao longo dos anos desenvolver o
+      que faço hoje.<br><br>
+      Os buquês preservados, os quadros autorais, os livros que se transformam a cada novo cliente, são formas de
+      (re)conexão com o que é verdadeiramente essencial para mim e para as pessoas com quem trabalho.<br><br>
+      Nesse processo, estabeleço vínculos, busco entender como meus clientes vivem e saber o que sonham, para a partir
+      daí transformar ideias em objetos significativos para cada um deles.
     </p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
     <div class="container mx-auto text-center" style="background-color: #412f26">
-      <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.</p>
+      <p style="font-family: 'Cinzel', sans-serif;">&copy; 2024 Sabrina Camara Atelier. Todos os direitos reservados.
+      </p>
       <div class="flex justify-center space-x-4 mt-2">
-        <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank" class="hover:text-gray-400">Instagram</a>
-        <a href="#" class="hover:text-gray-400">WhatsApp</a>
+        <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank"
+          class="hover:text-gray-400">Instagram</a>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

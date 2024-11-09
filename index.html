@@ -66,14 +66,14 @@
       color: #dbdbdb;
       /* Cor dourada para destacar */
     }
-
-    
-
   </style>
 
 </head>
 
 <body class="bg-gray-100">
+  <!-- ########################################################### -->
+  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
+  <!-- ########################################################### -->
 
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
       style="display:none;visibility:hidden"></iframe></noscript>
@@ -118,80 +118,96 @@
       <a href="index.html" class="hover:text-gray-900">Home</a>
       <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
       <a href="memorybook.html" class="hover:text-gray-900">Wedding Book</a>
-      <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
+      <a href="contato.html" class="hover:text-gray-900">Livro de Memórias</a>
       <a href="bio.html" class="hover:text-gray-900">Bio</a>
       <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
     </div>
   </nav>
 
-<!-- Carrossel ajustado para destacar o texto e reposicioná-lo -->
-<div id="custom-carousel" class="relative w-full pt-20" data-carousel="slide">
-  <div class="relative h-screen overflow-hidden rounded-lg">
-    <!-- Slide 1 -->
-    <div class="duration-700 ease-in-out" data-carousel-item>
-      <img src="image/capa.png" class="block w-full h-full object-cover" alt="Casamentos">
-      <!-- Fundo escurecido para destacar o texto -->
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div class="absolute bottom-24 left-14 text-left p-4 rounded-md text-white" style="font-family: 'Cinzel', sans-serif;">
-        <h2 class="text-4xl md:text-5xl ">Casamentos</h2>
-        <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-          <a href="bouquet.html">Acessar</a>
-        </button>
+  <!-- ########################################################### -->
+  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
+  <!-- ########################################################### -->
+
+  <!-- Carrossel ajustado para destacar o texto e reposicioná-lo -->
+  <div id="custom-carousel" class="relative w-full pt-20" data-carousel="slide">
+    <div class="relative h-screen overflow-hidden rounded-lg">
+      <!-- Slide 1 -->
+      <div class="duration-700 ease-in-out" data-carousel-item>
+        <img src="image/capa.png" class="block w-full h-full object-cover" alt="Casamentos">
+        <!-- Fundo escurecido para destacar o texto -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute bottom-24 left-14 text-left p-4 rounded-md text-white"
+          style="font-family: 'Cinzel', sans-serif;">
+          <h2 class="text-4xl md:text-5xl ">Casamentos</h2>
+          <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+            <a href="bouquet.html">Acessar</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="duration-700 ease-in-out" data-carousel-item>
+        <img src="image/bouquet_preservation.jpg" class="block w-full h-full object-cover" alt="Bouquet Preservation">
+        <!-- Fundo escurecido para destacar o texto -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute bottom-24 left-14 text-left p-4 rounded-md text-white"
+          style="font-family: 'Cinzel', sans-serif;">
+          <h2 class="text-4xl md:text-5xl">Bouquet Preservation</h2>
+          <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+            <a href="bouquet.html">Acessar</a>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="duration-700 ease-in-out" data-carousel-item>
+        <img src="image/weddingbook.jpg" class="block w-full h-full object-cover" alt="Wedding Book">
+        <!-- Fundo escurecido para destacar o texto -->
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="absolute bottom-16 left-16 text-left p-4 rounded-md text-white"
+          style="font-family: 'Cinzel', sans-serif;">
+          <h2 class="text-4xl md:text-5x1">Wedding Book</h2>
+          <button class="mt-2 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
+            <a href="wedding.html">Acessar</a>
+          </button>
+        </div>
       </div>
     </div>
 
-    <!-- Slide 2 -->
-    <div class="duration-700 ease-in-out" data-carousel-item>
-      <img src="image/bouquet_preservation.jpg" class="block w-full h-full object-cover" alt="Bouquet Preservation">
-      <!-- Fundo escurecido para destacar o texto -->
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div class="absolute bottom-24 left-14 text-left p-4 rounded-md text-white" style="font-family: 'Cinzel', sans-serif;">
-        <h2 class="text-4xl md:text-5xl">Bouquet Preservation</h2>
-        <button class="mt-10 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-          <a href="bouquet.html">Acessar</a>
-        </button>
-      </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1"
+        data-carousel-slide-to="0"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 2"
+        data-carousel-slide-to="1"></button>
+      <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 3"
+        data-carousel-slide-to="2"></button>
     </div>
 
-    <!-- Slide 3 -->
-    <div class="duration-700 ease-in-out" data-carousel-item>
-      <img src="image/weddingbook.jpg" class="block w-full h-full object-cover" alt="Wedding Book">
-      <!-- Fundo escurecido para destacar o texto -->
-      <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-      <div class="absolute bottom-16 left-16 text-left p-4 rounded-md text-white" style="font-family: 'Cinzel', sans-serif;">
-        <h2 class="text-4xl md:text-5x1">Wedding Book</h2>
-        <button class="mt-2 px-6 py-2 bg-white text-gray-800 font-semibold rounded hover:bg-gray-200">
-          <a href="wedding.html">Acessar</a>
-        </button>
-      </div>
-    </div>
+    <!-- Slider controls -->
+    <button type="button"
+      class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </span>
+    </button>
+    <button type="button"
+      class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+      data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
+        <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+        <span class="sr-only">Next</span>
+      </span>
+    </button>
   </div>
-
-  <!-- Slider indicators -->
-  <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3">
-    <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
-    <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
-    <button type="button" class="w-3 h-3 rounded-full bg-white" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
-  </div>
-
-  <!-- Slider controls -->
-  <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-      <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4" />
-      </svg>
-      <span class="sr-only">Previous</span>
-    </span>
-  </button>
-  <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
-    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 group-hover:bg-white/50">
-      <svg class="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
-        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4" />
-      </svg>
-      <span class="sr-only">Next</span>
-    </span>
-  </button>
-</div>
 
 
   <section class="container mx-auto my-12 p-6">
@@ -391,13 +407,12 @@
       <div class="flex justify-center space-x-4 mt-2">
         <a href="https://www.instagram.com/sabrinacamaraatelier/?hl=es-la" target="_blank"
           class="hover:text-gray-400">Instagram</a>
-        <a href="#" class="hover:text-gray-400">WhatsApp</a>
       </div>
     </div>
   </footer>
 
-   <!-- Flowbite JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.4/dist/flowbite.min.js"></script>
+  <!-- Flowbite JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@1.6.4/dist/flowbite.min.js"></script>
 
 </body>
 
