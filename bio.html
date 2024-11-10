@@ -13,18 +13,19 @@
 
 
     .hero-image {
-      height: 800px;
       width: 100%;
-      object-fit: cover;
+      height: 800px;
+      object-fit: contain;
+      /* Garante que a imagem seja exibida por completo, sem cortes */
     }
 
     /* Ajustes específicos para dispositivos móveis */
     @media (max-width: 768px) {
       .hero-image {
-        height: 600px;
-        /* Ajusta a altura da imagem para se adaptar à tela */
-
-        /* Cobre o contêiner mantendo a proporção, cortando se necessário */
+        height: auto;
+        /* Ajusta automaticamente a altura com base na proporção da imagem */
+        max-height: 600px;
+        /* Limita a altura máxima para se ajustar à tela do celular */
       }
     }
   </style>
@@ -57,7 +58,7 @@
   <!-- ################################################################### -->
 
   <!-- Hero Image -->
-  <section>
+  <section class="mt-24"> <!-- Adiciona uma margem superior -->
     <img src="image/sabrina.png" alt="Imagem Bio" class="hero-image w-full object-cover sm:h-64 md:h-96 lg:h-auto">
   </section>
 
