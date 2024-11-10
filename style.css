@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+@font-face {
+  font-family: 'Favicon';
+  src: url('path/to/your-icon.ico');
+}
+
+html::before {
+  content: '';
+  display: none;
+  background: url('image/logo.png') no-repeat;
+}
 
  .navbar {
     position: fixed;
@@ -54,3 +64,4 @@
     color: #e6e6e6;
   }
 }
+
