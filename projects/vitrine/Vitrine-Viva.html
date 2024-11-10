@@ -9,14 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../style.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-    }
-
-    html {
-      scroll-behavior: smooth;
     }
 
     /* Efeito de fade-in */
@@ -33,127 +29,64 @@
       }
     }
 
-    /* Estilização da scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: #f1f1f1;
-      border-radius: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #888;
-      border-radius: 8px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: #555;
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      z-index: 10;
-      background: rgba(255, 255, 255, 0.9);
-      /* Fundo branco com transparência */
-      backdrop-filter: blur(10px);
-      /* Efeito de desfoque de fundo */
-      transition: background 0.3s ease;
-    }
-
-    .navbar img {
-      max-height: 50px;
-    }
-
-    .navbar a {
-      font-family: 'Cinzel', sans-serif;
-      transition: ease-in 0.2s;
-    }
-
-    .navbar a:hover {
-      color: #dbdbdb;
-      /* Cor dourada para destacar */
-    }
   </style>
 </head>
 
 <body class="bg-gray-50">
 
-  <!-- ########################################################### -->
-  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
-  <!-- ########################################################### -->
+  <!-- ################################################################### -->
+  <!-- IMPORTAÇÃO DA NAVBAR / GTM & MOBILE -->
+  <!-- ################################################################### -->
 
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJ2B6KM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- Importa o arquivo HTML da navbar -->
+  <div id="navbar-container"></div>
+  <script>
+    // Carrega a navbar dinamicamente
+    fetch('/navbar.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('navbar-container').innerHTML = data;
+      })
+      .catch(error => console.error('Erro ao carregar a navbar:', error));
+  </script>
 
-  <!-- Botão do WhatsApp -->
-  <a href="https://wa.me/11937211320" target="_blank"
-    class="fixed bottom-5 right-5 bg-green-500 text-white rounded-full p-3 shadow-lg hover:bg-green-600 transition-colors duration-200 z-50">
-    <img src="image/whatsapp-icon.png" alt="WhatsApp" class="h-8 w-8">
-  </a>
+  <!-- Importa o Google Tag Manager -->
+  <script src="../../../js/gtm-script.js"></script>
+  <script src="../../../js/navbar.js"></script>
 
-  <header class="navbar">
-    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-      <div>
-        <img src="../image/logo_preta.png" alt="Logo Sabrina Camara Atelier">
-      </div>
-      <nav class="hidden md:flex items-center space-x-4 text-gray-800 relative"
-        style="font-size: 20px; font-family: 'Cinzel', sans-serif;">
-        <a href="index.html" class="hover:text-gray-900">Home</a>
-        <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-        <a href="index.html" class="hover:text-gray-900">Wedding Book</a>
-        <a href="memorybook.html" class="hover:text-gray-900">Livro de Memórias</a>
-        <a href="bio.html" class="hover:text-gray-900">Bio</a>
-        <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-      </nav>
 
-      <!-- Hamburger Menu for Mobile -->
-      <div class="md:hidden">
-        <button id="menu-button" class="text-gray-800 focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 6h16M4 12h16m-7 6h7"></path>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </header>
+  <!-- ################################################################### -->
+  <!-- IMPORTAÇÃO DA NAVBAR / GTM & MOBILE -->
+  <!-- ################################################################### -->
 
-  <!-- Mobile Menu -->
-  <nav id="mobile-menu" class="md:hidden absolute bg-white w-full top-16 left-0 shadow-lg hidden z-50"
-    style="font-family: 'Cinzel', sans-serif;">
-    <div class="flex flex-col px-6 py-4 space-y-2">
-      <a href="index.html" class="hover:text-gray-900">Home</a>
-      <a href="bouquet.html" class="hover:text-gray-900">Bouquet Preservation</a>
-      <a href="memorybook.html" class="hover:text-gray-900">Wedding Book</a>
-      <a href="contato.html" class="hover:text-gray-900">Livro de Memórias</a>
-      <a href="bio.html" class="hover:text-gray-900">Bio</a>
-      <a href="projects.html" class="hover:text-gray-900">Projetos Especiais</a>
-    </div>
-  </nav>
 
-  <!-- ########################################################### -->
-  <!-- NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAVBAR FIXA - NAV -->
-  <!-- ########################################################### -->
+  <!-- -------------------------------------------------------------------- -->
+  <!-- IMPORTAÇÃO DA SECTION DO BANNER -->
+  <!-- -------------------------------------------------------------------- -->
 
-  <section
-    class="relative bg-center bg-no-repeat bg-cover bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply fade-in">
-    <div
-      class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56 backdrop-blur-sm bg-opacity-70 bg-black/40 rounded-lg">
-      <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
-        style="font-family: 'Cinzel'; overflow-y: hidden;">
-        Vitrine-Viva New Vision Iguatemi
-      </h1>
-      <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-      </div>
-    </div>
-  </section>
+  <!-- Código para incluir na página de projetos e outras -->
+  <div id="projects-section-container"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sectionContainer = document.getElementById('projects-section-container');
+
+      fetch('../projects_section.html')
+        .then(response => response.text())
+        .then(data => {
+          sectionContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar a seção Projects:', error));
+    });
+  </script>
+
+  <!-- -------------------------------------------------------------------- -->
+  <!-- IMPORTAÇÃO DA SECTION DO BANNER -->
+  <!-- -------------------------------------------------------------------- -->
 
   <br><br>
+
+  <h3 class="text-center font-bold text-3xl font-bold mb-6" 
+  style="font-family: 'Cinzel', serif; font-weight: 340; color: #412f26"> Vitrine Ótica - Shopping Iguatemi </h3>
 
   <section class="py-16 px-8 md:px-28 bg-gray-50 fade-in">
     <div class="max-w-4xl mx-auto text-center">
@@ -169,7 +102,7 @@
         Foram quase 400 rosas que secaram ao vivo, no tempo delas, num lugar onde pessoas vêm e vão diariamente, em seus
         diversos ritmos.
         <br><br>
-        Bem vindo ao conceito do tempo kairós:
+        Bem vindo ao conceito do tempo Kairós:
         <br><br>
         O momento indeterminado no tempo em que algo especial acontece.
       </p>
@@ -180,34 +113,34 @@
   <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4 md:p-12 fade-in">
     <!-- Imagens -->
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-      <img class="w-full h-72 object-cover cursor-pointer" src="/vitrine/1.jpg" alt="Imagem 1"
+      <img class="w-full h-72 object-cover cursor-pointer" src="vitrine-media/1.jpg" alt="Imagem 1"
         onclick="openModal(this.src)">
     </div>
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-      <img class="w-full h-72 object-cover cursor-pointer" src="/vitrine/2.jpg" alt="Imagem 2"
+      <img class="w-full h-72 object-cover cursor-pointer" src="vitrine-media/2.jpg" alt="Imagem 2"
         onclick="openModal(this.src)">
     </div>
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
-      <img class="w-full h-72 object-cover cursor-pointer" src="/vitrine/3.jpg" alt="Imagem 3"
+      <img class="w-full h-72 object-cover cursor-pointer" src="vitrine-media/3.jpg" alt="Imagem 3"
         onclick="openModal(this.src)">
     </div>
 
     <!-- Vídeos -->
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
       <video class="w-full h-72 object-cover cursor-pointer" controls>
-        <source src="/vitrine/1.mp4" type="video/mp4">
+        <source src="vitrine-media/1.mp4" type="video/mp4">
         Seu navegador não suporta o vídeo.
       </video>
     </div>
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
       <video class="w-full h-72 object-cover cursor-pointer" controls>
-        <source src="/vitrine/2.mp4" type="video/mp4">
+        <source src="vitrine-media/2.mp4" type="video/mp4">
         Seu navegador não suporta o vídeo.
       </video>
     </div>
     <div class="relative overflow-hidden rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
       <video class="w-full h-72 object-cover cursor-pointer" controls>
-        <source src="/vitrine/3.mp4" type="video/mp4">
+        <source src="vitrine-media/3.mp4" type="video/mp4">
         Seu navegador não suporta o vídeo.
       </video>
     </div>

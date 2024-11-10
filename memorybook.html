@@ -126,16 +126,28 @@
   <!-- IMPORTAÇÃO DA NAVBAR / GTM & MOBILE -->
   <!-- ################################################################### -->
 
-  <section class="bg-center bg-no-repeat bg-cover bg-gray-700 bg-blend-multiply"
-    style="background-image: url('image/memories_book.jpg'); min-height: 100vh;">
-    <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-96">
-      <!-- Conteúdo interno da seção -->
-      <h1 class="mb-4 text-4xl font-bold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"
-        style="font-family: 'Cinzel', sans-serif;">LIVRO DE MEMÓRIAS</h1>
-    </div>
-  </section>
+<!-- -------------------------------------------------------------------- -->
+  <!-- IMPORTAÇÃO DA SECTION DO BANNER -->
+  <!-- -------------------------------------------------------------------- -->
 
+  <!-- Código para incluir na página paula_e_marcos.html e outras -->
+  <div id="memorybook-section-container"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const sectionContainer = document.getElementById('memorybook-section-container');
 
+      fetch('memorybook/memorybook_section.html')
+        .then(response => response.text())
+        .then(data => {
+          sectionContainer.innerHTML = data;
+        })
+        .catch(error => console.error('Erro ao carregar a seção Memory Book:', error));
+    });
+  </script>
+
+  <!-- -------------------------------------------------------------------- -->
+  <!-- IMPORTAÇÃO DA SECTION DO BANNER -->
+  <!-- -------------------------------------------------------------------- -->
 
   <section class="bg-white dark:bg-gray-900">
     <div class="grid max-w-screen-xl px-6 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
@@ -156,63 +168,58 @@
   </section>
 
   <div class="flex justify-center py-8">
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
       <div class="text-center">
         <a href="memorybook/emma.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/emma/11.jpeg" alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/emma/11.jpeg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Emma Florence</p>
       </div>
       <div class="text-center">
         <a href="memorybook/flowers.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/flower/11.jpg"
-            alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/flower/11.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Flowers Sons</p>
       </div>
       <div class="text-center">
         <a href="memorybook/india.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/india/11.jpg" alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/india/11.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Índia Antiga</p>
       </div>
       <div class="text-center">
         <a href="memorybook/rosas.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/rosa/rosa1.jpeg"
-            alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/rosa/rosa1.jpeg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Livro das Rosas</p>
       </div>
       <div class="text-center">
         <a href="memorybook/feminino.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="memorybook/feminino/feminino1.jpg" alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/feminino/feminino1.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Livro do Feminino</p>
       </div>
       <div class="text-center">
         <a href="memorybook/impressas.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="memorybook/impressas/impressas1.jpg" alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/impressas/impressas1.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Memórias Impressas</p>
       </div>
       <div class="text-center">
         <a href="memorybook/provence.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto"
-            src="memorybook/provence/provence.jpg" alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/provence/provence.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Provence</p>
       </div>
       <div class="text-center">
         <a href="memorybook/botanic.html">
-          <img class="h-80 w-auto max-w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/botanic/botanic1.jpg"
-            alt="">
+          <img class="h-80 w-full rounded-lg mb-2 object-cover mx-auto" src="memorybook/botanic/botanic1.jpg" alt="">
         </a>
         <p class="text-gray-700 font-medium">Vintage Botanic</p>
       </div>
     </div>
   </div>
+  
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-white py-4" style="background-color: #412f26">
