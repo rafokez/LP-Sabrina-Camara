@@ -37,13 +37,13 @@ O site está **aprovado para campanhas no Google Ads**, com código validado e e
 
 
 
-<img src="https://i.imgur.com/jpgotvzjiI.jpg">
-<img src="https://imgur.com/uWWgi3t">
-<img src="https://imgur.com/6yGmqM1">
-<img src="https://imgur.com/M89bjCM">
-<img src="https://imgur.com/ICZQXEN">
-<img src="https://imgur.com/8wPnoK5">
-<img src="https://imgur.com/Rv93Len">
+<img src="https://i.imgur.com/otvzjiI.png">
+<img src="https://i.imgur.com/uWWgi3t.png">
+<img src="https://i.imgur.com/6yGmqM1.png">
+<img src="https://i.imgur.com/M89bjCM.png">
+<img src="https://i.imgur.com/ICZQXEN.png">
+<img src="https://i.imgur.com/8wPnoK5.png">
+<img src="https://i.imgur.com/Rv93Len.png">
 
 ## ✅ Google Ads
 
