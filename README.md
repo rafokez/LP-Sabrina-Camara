@@ -33,21 +33,18 @@ O site está **aprovado para campanhas no Google Ads**, com código validado e e
 
 ---
 
-## 🖼️ Inserção de Imagens
+## 🖼️ Imagens
 
-Você pode incluir suas fotos diretamente por URL nos locais indicados dentro do código HTML. Exemplos:
 
 ```html
-<img src="https://example.com/foto-buque.jpg" alt="Buquê Eternizado">
-<img src="https://example.com/foto-livro.jpg" alt="Livro de Memórias">
-<img src="https://example.com/foto-casamento.jpg" alt="Serviço de Casamento">
+<img src="https://imgur.com/otvzjiI">
+<img src="https://imgur.com/uWWgi3t">
+<img src="https://imgur.com/6yGmqM1">
+<img src="https://imgur.com/M89bjCM">
+<img src="https://imgur.com/ICZQXEN">
+<img src="https://imgur.com/8wPnoK5">
+<img src="https://imgur.com/Rv93Len">
 ```
-
-Recomendações para hospedagem de imagens:
-
-- [Imgur](https://imgur.com/upload)
-- [Cloudinary](https://cloudinary.com/)
-- [Postimages](https://postimages.org/)
 
 ---
 
