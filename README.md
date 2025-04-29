@@ -36,7 +36,7 @@ O site está **aprovado para campanhas no Google Ads**, com código validado e e
 ## 🖼️ Imagens
 
 
-```html
+
 <img src="https://imgur.com/otvzjiI">
 <img src="https://imgur.com/uWWgi3t">
 <img src="https://imgur.com/6yGmqM1">
@@ -44,9 +44,7 @@ O site está **aprovado para campanhas no Google Ads**, com código validado e e
 <img src="https://imgur.com/ICZQXEN">
 <img src="https://imgur.com/8wPnoK5">
 <img src="https://imgur.com/Rv93Len">
-```
 
----
 
 ## 📸 Sugestões de Seções com Imagens
 
